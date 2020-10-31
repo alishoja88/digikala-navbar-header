@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'vaziri-FD';
+  src: url("../../fonts/Vazir-FD.woff");
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.header-top {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.header-top-right {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 110px;
+  max-height: 100%;
+  padding-right: 0px;
+  margin-left: 24px;
+  flex: 0 0 110px;
+}
+
+.logo img {
+  width: 130px;
+  height: 30px;
+}
+
+.header-search-bar {
+  width: 700px;
+  position: relative;
+}
+
+.header-search-bar::after {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #a1a3a8;
+  font-size: 20px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.search-bar-input {
+  width: 100%;
+  border: none;
+  background: #f0f0f1;
+  text-align: right;
+  position: relative;
+  outline: none;
+  position: relative;
+  border-radius: 5px;
+  padding: 12px 45px 12px 10px;
+  font-family: "vaziri-FD";
+}
+.search-bar-input::placeholder {
+  font-size: 13px;
+  font-family: "vaziri-FD" ;
+  text-align: right;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.login-account {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  height: 50px;
+  align-items: center;
+  margin-left: 80px;
+  position: relative;
+}
+.login-account-link {
+  border-radius: 3px;
+  display: inline-flex;
+  border: 1px solid #e0e0e2;
+  width: 170px;
+  height: 46px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #616161;
+  font-size: 14px;
+  position: relative;
+}
+
+.login-account-link::after {
+  content: "\f007";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #616161;
+  font-size: 20px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 11px;
+  right: -3%;
+}
+
+.login-account-link::before {
+  content: " ";
+  font-family: FontAwesome;
+  height: 28px;
+  bottom: 4px;
+  position: absolute;
+  width: 2px;
+  background: #f0f0f1;
+  left: -20px;
+}
+
+.login-account::before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  height: 28px;
+  bottom: 12px;
+  position: absolute;
+  width: 2px;
+  left: -58px;
+  font-size: 32px;
+  color: #616161;
+}
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    display: none;
+  }
+}

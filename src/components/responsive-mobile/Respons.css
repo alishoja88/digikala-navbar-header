@@ -1,0 +1,259 @@
+.responsiv-digikala{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  @font-face {
+    font-family: "vaziri-FD";
+    src: url("../../fonts/Vazir-FD.woff");
+  }
+  .responsiv-digikala{
+    display: block;
+  }
+  .header-respons {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header-top-respos {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 50px;
+    max-width: 768px;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+  }
+  .navbar-respons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .navbar-respons i {
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+  }
+  .logo-respons {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+  }
+  .logo-respons img {
+    width: 110px;
+    height: auto;
+  }
+  .question-respons {
+    display: flex;
+    flex: 1;
+  }
+  .question-respons i {
+    font-size: 27px;
+    color: #999;
+    cursor: pointer;
+  }
+  .search-login-respons {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 10px 0;
+    height: 70px;
+    align-items: center;
+  }
+  .serach-respons {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+  }
+  .search-input-respons {
+    width: 100%;
+    border-radius: 8px;
+    border-color: #999;
+    height: 40px;
+    padding: 10px 40px 10px 10px;
+    outline: none;
+    border-width: 1px;
+    position: relative;
+  }
+  .search-input-respons::after{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #a1a3a8;
+    font-size: 20px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 9px;
+    right: 0;
+  }
+  .search-input-respons[type="text"] {
+    text-align: right;
+  }
+  .search-input-respons::placeholder {
+    text-align: right;
+    font-weight: 400;
+    font-size: 12px;
+    color: #aaaaaaf5;
+    font-family: "vaziri-FD" ;
+  }
+  .serach-respons i {
+    position: absolute;
+    right: 16px;
+    top: 69px;
+    font-size: 23px;
+    transform: rotate(90deg);
+    color: #999;
+  }
+  .shop-backet-respons {
+    display: flex;
+    width: 5%;
+  }
+  .shop-backet-respons i {
+    font-size: 28px;
+    position: absolute;
+    top: 66px;
+    color: #999;
+  }
+  .login-respons {
+    display: flex;
+    width: 5%;
+  }
+  .login-respons i {
+    font-size: 28px;
+    position: absolute;
+    top: 66px;
+    color: #999;
+  }
+  .toggel-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    overflow: auto;
+    height: 100vh;
+    z-index: 12;
+  }
+
+  .toggel-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .toggel-logo img {
+    width: 110px;
+    height: 70px;
+    margin-top: 10px;
+  }
+
+  .toggel-main-list-product-respons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .main-list-product-respons {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 10px 10px 80px 0;
+    width: 100%;
+  }
+  .item-main-list-product-respons {
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    display: flex;
+  }
+  .link-main-list-product-respons i {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .link-main-list-product-respons{
+    font-size: 1rem;
+    line-height: 1.571;
+    color: #757575;
+    padding: 15px 5px 15px 15px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+  .divaider {
+    border-bottom: 1px solid #999;
+    margin: 0 25px;
+  }
+  .overly {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 500px;
+    background: hsla(0, 0%, 40%, 0.25);
+  }
+
+  .list-product-categori-respons {
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 40px 10px 0;
+    width: 100%  
+  }
+  .list-product-categori-respons span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #616161;  }
+  .list-product-categori-respons li {
+    list-style: none;
+  }
+  .list-product-categori-respons li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #616161;
+  }
+
+  .select-city {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #929292;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 12px 8px 40px;
+
+  }
+  .link-select-city {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    position: relative;
+  }
+  .fa-map-marker-alt {
+    margin-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .select-city::after{
+    content: "\f053";
+    font-family: FontAwesome;
+    height: 10px;
+    position: absolute;
+    width: 2px;
+    left: 5px;
+    font-size: 18px;
+    color: #fffbfb;
+    top: 130px;
+  }
+}
